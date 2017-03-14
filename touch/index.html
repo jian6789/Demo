@@ -39,7 +39,8 @@
             var child = document.getElementById('divchild');
             document.addEventListener('touchstart',function(e){
                 setTimeout(function(){
-                   child.parentNode && child.parentNode.removeChild(child);
+                   child.remove();
+                   divconsole('蓝色区域消失了！')
                 },500);
                 divconsole('触发了touchstart...');
             });
